@@ -1,9 +1,11 @@
 import React from 'react';
 import dwnpng from '../../assets/icon-downloads.png'
 import ratingpng from '../../assets/icon-ratings.png'
+import { Link } from 'react-router';
 
 const AppCard = ({singleApp}) => {
     return (
+       <Link to={`/details/${singleApp.id}`}>
         <div>
             <div className="card bg-base-100 max-w-96 shadow-sm p-4">
   <figure>
@@ -20,6 +22,7 @@ const AppCard = ({singleApp}) => {
   </div>
 </div>
         </div>
+       </Link>
     );
 };
 
