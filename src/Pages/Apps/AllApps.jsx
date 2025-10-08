@@ -16,7 +16,7 @@ const AllApps = () => {
           
           
           return (
-              <div className=' grid justify-center items-center text-center p-4 sm:p-12 md:p-16 lg:p-20'>
+              <div className='bg-[#D9D9D9] grid justify-center items-center text-center p-4 sm:p-12 md:p-16 lg:p-20'>
                   <h2 className='  font-bold text-5xl'>Our All Applications</h2>
                   <p className='text-[#627382] mt-4 mb-6 md:mb-8 lg:mb-10'>Explore All Apps on the Market developed by us. We code for Millions</p>
                   <div className='flex justify-between items-center mb-4 flex-col-reverse md:flex-row'>

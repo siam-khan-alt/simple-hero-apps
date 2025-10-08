@@ -11,7 +11,7 @@ const AppCard = ({singleApp}) => {
   <figure>
     <img
       src={singleApp.image}
-      alt="" className=' object-contain max-w-[316px] md:h-[280px] lg:h-[316px]' />
+      alt="" className=' object-contain max-w-[316px] md:h-[230px] ' />
   </figure>
   <div className="  ">
     <h2 className="card-title my-4">{singleApp.title}</h2>

@@ -5,7 +5,7 @@ import SampleApps from './SampleApps';
 
 const Home = () => {
     return (
-        <div>
+        <div className='bg-gray-200'>
            <Hero></Hero> 
            <Community></Community>
            <SampleApps></SampleApps>
