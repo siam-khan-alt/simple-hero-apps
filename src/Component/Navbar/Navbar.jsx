@@ -21,7 +21,7 @@ const Navbar = () => {
       <NavLink to={'/installed'}>Installation</NavLink>
       </div>
     </div>
-    <a className="btn  btn-ghost "> <img src={png} alt="" className='h-10 w-10' />HERO.IO</a>
+    <a href='/' className="btn  btn-ghost "> <img src={png} alt="" className='h-10 w-10' />HERO.IO</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <div className="menu menu-horizontal flex gap-4 px-1">
@@ -32,7 +32,7 @@ const Navbar = () => {
   </div>
   <div className="navbar-end">
     
-    <button className="btn text-white  bg-gradient-to-br from-[#632EE3] to-[#9F62F2]"> <Github />Contribute</button>
+    <button onClick={() => window.open("https://github.com/siam-khan-alt", "_blank")} className="btn text-white  bg-gradient-to-br from-[#632EE3] to-[#9F62F2]"> <Github />Contribute</button>
   </div>
 </div>
 

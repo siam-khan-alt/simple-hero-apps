@@ -1,7 +1,7 @@
 import { createBrowserRouter } from 'react-router';
 import App from '../App';
 import Home from '../Pages/Home/Home';
-import Apps from '../Pages/Apps/Apps';
+import Apps from '../Pages/Apps/AllApps';
 import Installed from '../Pages/Installed/Installed';
 
 
