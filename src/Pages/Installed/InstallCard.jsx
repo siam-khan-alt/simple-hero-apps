@@ -13,14 +13,14 @@ const InstallCard = ({singleApp ,handleUninstall}) => {
               
               <div className="  ">
                 <h2 className="text-[20px] font-medium">{singleApp.title}</h2>
-                <div className="flex justify-between items-center">
+                <div className="flex gap-2  justify-between items-center">
                   <p className='flex items-center rounded-sm    text-[#00D390]'><img src={dwnpng} alt="" className='h-4 w-4 mr-2' />{singleApp.downloads}</p>
                   <p className='flex items-center  text-[#00D390]  rounded-sm  '><img src={ratingpng} alt="" className='h-4 w-4 mr-2' />{singleApp.ratingAvg}</p>
                   <p className='text-[#627382]'>{singleApp.size}MB</p>
                 </div>
               </div>
             </div>
-            <button onClick={()=>handleUninstall(singleApp.id)} className='btn'>Unistall</button>
+            <button onClick={()=>handleUninstall(singleApp.id)} className='btn bg-[#00D390] text-white '>Unistall</button>
                     </div>
         </div>
     );
