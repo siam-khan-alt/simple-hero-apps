@@ -28,7 +28,6 @@ const AllApps = () => {
         <RingLoader color="#632EE3" size={80} />
       </div>
     );
- 
 
   return (
     <div className="bg-[#D9D9D9] grid justify-center items-center text-center p-4 sm:p-12 md:p-16 lg:p-20">

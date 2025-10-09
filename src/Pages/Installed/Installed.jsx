@@ -7,7 +7,7 @@ import { RingLoader } from "react-spinners";
 
 const Installed = () => {
   const [Install, setInstall] = useState([]);
-  const [sort, setSort] = useState([]);
+  const [sort, setSort] = useState("");
   const { apps, loading } = useApps();
 
   useEffect(() => {
@@ -21,11 +21,11 @@ const Installed = () => {
   const handleSort = (type) => {
     setSort(type);
     if (type === "Low To High") {
-      const addInstall = [...Install].sort((a, b) => a.size - b.size);
+      const addInstall = [...Install].sort((a, b) => a.downloads - b.downloads);
       setInstall(addInstall);
     }
     if (type === "High To Low") {
-      const addInstall = [...Install].sort((a, b) => b.size - a.size);
+      const addInstall = [...Install].sort((a, b) => b.downloads - a.downloads);
       setInstall(addInstall);
     }
   };
@@ -44,7 +44,6 @@ const Installed = () => {
         <RingLoader color="#632EE3" size={80} />
       </div>
     );
-  
 
   return (
     <div className=" bg-gray-200 grid   p-4 sm:p-12 md:p-16 lg:p-20">

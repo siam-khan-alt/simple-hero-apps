@@ -1,9 +1,17 @@
-import React from 'react';
-import { BarChart, Bar, Rectangle, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import React from "react";
+import {
+  BarChart,
+  Bar,
+  Rectangle,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from "recharts";
 
-
-
-const Recharts = ({rat}) => {
+const Recharts = ({ rat }) => {
   return (
     <ResponsiveContainer width="100%" height={300}>
       <BarChart
@@ -20,11 +28,10 @@ const Recharts = ({rat}) => {
       >
         <CartesianGrid strokeDasharray="3 3" />
         <XAxis type="number" />
-        <YAxis type="category" dataKey="name" reversed/>
+        <YAxis type="category" dataKey="name" reversed />
         <Tooltip />
-       
-       
-        <Bar dataKey="count" fill="#FF8811"  />
+
+        <Bar dataKey="count" fill="#FF8811" />
       </BarChart>
     </ResponsiveContainer>
   );

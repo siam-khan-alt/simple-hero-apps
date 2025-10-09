@@ -1,18 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
 
+import router from "./Router/Router";
+import { RouterProvider } from "react-router";
 
-
-
-import router from './Router/Router'
-import { RouterProvider } from 'react-router'
-
-
-
-
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById("root")).render(
   <StrictMode>
-   <RouterProvider router={router}  hydrateFallback={<div>Loading...</div>} ></RouterProvider> 
+    <RouterProvider
+      router={router}
+      hydrateFallback={<div>Loading...</div>}
+    ></RouterProvider>
   </StrictMode>
-)
+);
