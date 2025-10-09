@@ -1,8 +1,8 @@
 const getstoreApp = () => {
-  const storeBookSTR = localStorage.getItem("readlist");
-  if (storeBookSTR) {
-    const storeBookData=JSON.parse(storeBookSTR)
-    return storeBookData
+  const storeAppSTR = localStorage.getItem("readlist");
+  if (storeAppSTR) {
+    const storeAppData=JSON.parse(storeAppSTR)
+    return storeAppData.map(id => parseInt(id))
   }
   else{
     return[]

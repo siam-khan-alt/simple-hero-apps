@@ -8,9 +8,11 @@ import { ToastContainer } from 'react-toastify'
 function App() {
  
   return (
-    <div className='max-w-[1600px] mx-auto'>
+    <div className=' bg-gray-200  flex flex-col'>
     <Navbar></Navbar>
-    <Outlet></Outlet>
+    <div className='flex-1 min-h-screen'>
+      <Outlet></Outlet>
+    </div>
     <Footer></Footer>
     <ToastContainer></ToastContainer>
     </div>

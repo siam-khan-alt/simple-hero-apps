@@ -2,10 +2,12 @@ import React from 'react';
 import useApps from '../../Hooks/useApps';
 import AppCard from '../../Component/AppCard/AppCard';
 import { Link } from 'react-router';
+import { RingLoader } from 'react-spinners';
 
 const SampleApps = () => {
     const {apps}=useApps()
     const sampleapps= apps.slice(0,8)
+   
     
     return (
         <div className=' grid justify-center items-center text-center p-4 sm:p-12 md:p-16 lg:p-20'>
